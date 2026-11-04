@@ -358,15 +358,3 @@ cargo run --example <example_name> --features <required_features>
 ## 🤝 Contributing
 
 Contributions are welcome! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-## 📄 License
-
-This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
-
-See \[LICENSE\](LICENSE) for details.
-
-## 🙏 Acknowledgments
-
-- Built with [Tokio](https://tokio.rs/) for async runtime
-- HTTP support powered by [Axum](https://github.com/tokio-rs/axum)
-- Inspired by reactive programming patterns and stream processing frameworks
