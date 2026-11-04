@@ -25,7 +25,7 @@ jobs:
       is_prerelease: ${{ steps.version.outputs.is_prerelease }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Extract version from tag
         id: version
         run: |
@@ -66,7 +66,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -98,7 +98,7 @@ jobs:
       url: https://crates.io/crates/streamweave
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
       - name: Publish to crates.io
@@ -119,7 +119,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Generate changelog
@@ -170,7 +170,7 @@ jobs:
     needs: [validate, publish]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
       - name: Cache dependencies
